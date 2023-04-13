@@ -31,3 +31,17 @@ Use the following URL to add this repository:
 [:books: {{ addon.name }} add-on documentation][addon-doc-{{ addon.target }}]
 
 {% endfor %}
+
+{% for addon in addons %}
+[addon-{{ addon.target }}]: {{ addon.repo }}/tree/{{ addon.version }}
+[addon-doc-{{ addon.target}}]: {{ addon.repo }}/blob/{{ addon.version }}/README.md
+[{{ addon.target }}-issue]: {{ addon.repo }}/issues
+[{{ addon.target }}-version-shield]: https://img.shields.io/badge/version-{{ addon.version | replace("-", "--") }}-blue.svg
+{% for arch in ['aarch64', 'amd64', 'armhf', 'armv7', 'i386'] %}
+{% if arch in addon.archs %}
+[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-yes-green.svg
+{% else %}
+[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-no-red.svg
+{% endif %}
+{% endfor %}
+{% endfor %}
