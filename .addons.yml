@@ -2,6 +2,6 @@
 channel: stable
 addons:
   owserver:
-    repository: lrybak/addon-owserver
+    repository: lrybak/hassio-owserver
     target: owserver
     image: ghcr.io/lrybak/owserver/{arch}
