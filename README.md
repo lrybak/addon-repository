@@ -39,3 +39,7 @@ onewire server to read 1-Wire devices
 [owserver-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [owserver-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [owserver-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+
+## Found an issue?
+Please report it in add-on dedicated repository
+- [Open an issue for the add-on: owserver (1-wire)][owserver-issue]
