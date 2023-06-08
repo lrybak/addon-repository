@@ -45,3 +45,9 @@ Use the following URL to add this repository:
 {% endif %}
 {% endfor %}
 {% endfor %}
+
+## Found an issue?
+Please report it in add-on dedicated repository
+{% for addon in addons %}
+- [Open an issue for the add-on: {{ addon.name }}][{{ addon.target }}-issue]
+{% endfor %}
