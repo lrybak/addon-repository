@@ -8,12 +8,12 @@
 ![armv7][armv7-shield]
 ![i386][i386-shield]
 
-Provides owserver to read 1-Wire devices over DS2480B-based bus master serial device..
+The addon provides owserver to read 1-Wire devices over serial/i2c or usb device.
 
 
 ## About
 
-This addon provides you owserver instance to read 1-Wire devices over DS2480B-based bus master serial device and exposing reading to Home Assistant via the native integration. Addon has been tested with **[MERA-PROJEKT MP00206-P](http://www.meraprojekt.com.pl/mp00206-p.html)** but shoud work well with other devices based on DS2480B chip.
+This addon provides you owserver instance to read 1-Wire devices over serial/i2c or usb device and exposing reading to Home Assistant via the native integration. Addon has been tested with **[MERA-PROJEKT MP00206-P](http://www.meraprojekt.com.pl/mp00206-p.html)** but shoud work well with other serial/i2c/usb devices supported by the **[owfs project](https://owfs.org/index_php_page_bus-masters.html)**.
 
 ## Installation and configuration
 
@@ -29,17 +29,17 @@ This addon provides you owserver instance to read 1-Wire devices over DS2480B-ba
 1. That's it. On the integrations page you will find 1-Wire integration with discovered devices.
 
 ### Configuration
-Please check the **[full documentation page](https://github.com/lrybak/addon-owserver/blob/master/owserver/DOCS.md)**.
+Please check the **[full documentation page](https://github.com/lrybak/hassio-owserver/blob/master/DOCS.md)**.
 
 ## Screenshots
 
-![Integration setup 1](https://github.com/lrybak/addon-owserver/raw/master/images/screenshot_setup1.jpg)
-![Integration setup 2](https://github.com/lrybak/addon-owserver/raw/master/images/screenshot_setup2.jpg)
-![Integration setup 3](https://github.com/lrybak/addon-owserver/raw/master/images/screenshot_setup3.jpg)
-![Integrations page](https://github.com/lrybak/addon-owserver/raw/master/images/screenshot_integrations.jpg)
-![owhttpd](https://github.com/lrybak/addon-owserver/raw/master/images/screenshot_owhttpd.jpg)
+![Integration setup 1](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_setup1.png)
+![Integration setup 2](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_setup2.png)
+![Integration setup 3](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_setup3.jpg)
+![Integrations page](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_integrations.jpg)
+![owhttpd](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_owhttpd.jpg)
 
-[version]: https://img.shields.io/badge/version-v0.3.0-blue.svg
+[version]: https://img.shields.io/badge/version-v0.3.1-blue.svg
 [releases]: https://github.com/lrybak/hassio-owserver/releases
 [addons-repository]: https://github.com/lrybak/addon-repository
 [addons-repository-beta]: https://github.com/lrybak/addon-repository-beta
