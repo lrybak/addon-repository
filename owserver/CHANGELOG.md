@@ -1,3 +1,2 @@
 ## Changes
-- ⬆️ Update hassio-addons/addon-base to v14.3.2
-- 🛠️ Fixes #5
+- 🆕 Feature request: Make it working with HA7NET devices #13
