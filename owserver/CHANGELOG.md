@@ -1,2 +1,5 @@
-- 🆙 Update hassio-addons/addon-base to v16.3.2
-- 🆙 Bump Github Actions version
+## Changes
+- 🆕 Added option to support PBM by @SamGamdschie in https://github.com/lrybak/hassio-owserver/pull/27
+
+## New Contributors
+* @SamGamdschie made their first contribution in https://github.com/lrybak/hassio-owserver/pull/27
