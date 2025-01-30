@@ -1,8 +1,6 @@
 ## Changes
-- 🆕 ⚠️ : Ability to add multiple 1-Wire devices - **breaking change**, requires addon re-configuration. Closes #22 
-- ⬆️ Update hassio-addons/addon-base to v15.3.4
-
-### Breaking change: read before you upgrade!
-
-This update introduces the ability to add multiple 1-Wire devices which required changes to to add-on configuration.
-Devices now need to be specified as a YAML list. Please refer to the documentation page for more details before you upgrade.
+- 🆕 Send discovery information to Home Assistant by @epenet in https://github.com/lrybak/hassio-owserver/pull/34 Closes #22 
+- 🆕 Support passive USB serial adapter @s-anderss in https://github.com/lrybak/hassio-owserver/pull/35 Closes #33 
+- ⬆️ Update hassio-addons/addon-base to v16.3.6
+- 🛠️ Update service management to handle dependencies correctly by migrating from the legacy system to the s6-rc way.
+- 🛠️ Resolved segmentation fault issues during image builds by switching the base image of action: docker/setup-qemu-action to tonistiigi/binfmt:qemu-v8.1.5. The default latest image, previously used, was causing segfaults (see [tonistiigi/binfmt#215](https://github.com/tonistiigi/binfmt/issues/215)).
