@@ -1,11 +1,11 @@
 ## addon-repository
 
-This add-ons repository contains stable releases of add-ons.
+This apps repository contains stable releases of apps.
 
 ## Installation
 
-Adding this add-ons repository to your Home Assistant instance is
-pretty straightforward. In the Home Assistant add-on store,
+Adding this apps repository to your Home Assistant instance is
+pretty straightforward. In the Home Assistant apps store,
 a possibility to add a repository is provided.
 
 Use the following URL to add this repository:
@@ -14,40 +14,37 @@ Use the following URL to add this repository:
 {{ repo }}
 ```
 
-## Add-ons provided by this repository
+## Apps provided by this repository
 
-{% for addon in addons %}
-### &#10003; [{{ addon.name }}][addon-{{ addon.target }}]
+{% for app in apps %}
+### &#10003; [{{ app.name }}][addon-{{ app.target }}]
 
-![Latest Version][{{ addon.target }}-version-shield]
-![Supports armhf Architecture][{{ addon.target }}-armhf-shield]
-![Supports armv7 Architecture][{{ addon.target }}-armv7-shield]
-![Supports aarch64 Architecture][{{ addon.target }}-aarch64-shield]
-![Supports amd64 Architecture][{{ addon.target }}-amd64-shield]
-![Supports i386 Architecture][{{ addon.target }}-i386-shield]
+![Latest Version][{{ app.target }}-version-shield]
+![Supports aarch64 Architecture][{{ app.target }}-aarch64-shield]
+![Supports amd64 Architecture][{{ app.target }}-amd64-shield]
 
-{{ addon.description }}
+{{ app.description }}
 
-[:books: {{ addon.name }} add-on documentation][addon-doc-{{ addon.target }}]
+[:books: {{ app.name }} app documentation][addon-doc-{{ app.target }}]
 
 {% endfor %}
 
-{% for addon in addons %}
-[addon-{{ addon.target }}]: {{ addon.repo }}/tree/{{ addon.version }}
-[addon-doc-{{ addon.target}}]: {{ addon.repo }}/blob/{{ addon.version }}/README.md
-[{{ addon.target }}-issue]: {{ addon.repo }}/issues
-[{{ addon.target }}-version-shield]: https://img.shields.io/badge/version-{{ addon.version | replace("-", "--") }}-blue.svg
-{% for arch in ['aarch64', 'amd64', 'armhf', 'armv7', 'i386'] %}
-{% if arch in addon.archs %}
-[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-yes-green.svg
+{% for app in apps %}
+[addon-{{ app.target }}]: {{ app.repo }}/tree/{{ app.version }}
+[addon-doc-{{ app.target}}]: {{ app.repo }}/blob/{{ app.version }}/README.md
+[{{ app.target }}-issue]: {{ app.repo }}/issues
+[{{ app.target }}-version-shield]: https://img.shields.io/badge/version-{{ app.version | replace("-", "--") }}-blue.svg
+{% for arch in ['aarch64', 'amd64'] %}
+{% if arch in app.archs %}
+[{{ app.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-yes-green.svg
 {% else %}
-[{{ addon.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-no-red.svg
+[{{ app.target }}-{{ arch }}-shield]: https://img.shields.io/badge/{{ arch }}-no-red.svg
 {% endif %}
 {% endfor %}
 {% endfor %}
 
 ## Found an issue?
-Please report it in add-on dedicated repository
-{% for addon in addons %}
-- [Open an issue for the add-on: {{ addon.name }}][{{ addon.target }}-issue]
+Please report it in app dedicated repository
+{% for app in apps %}
+- [Open an issue for the app: {{ app.name }}][{{ app.target }}-issue]
 {% endfor %}

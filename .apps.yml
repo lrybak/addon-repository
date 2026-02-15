@@ -1,6 +1,6 @@
 ---
 channel: stable
-addons:
+apps:
   owserver:
     repository: lrybak/hassio-owserver
     target: .
