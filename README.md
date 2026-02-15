@@ -25,17 +25,21 @@ https://github.com/lrybak/addon-repository
 ![Supports amd64 Architecture][owserver-amd64-shield]
 ![Supports i386 Architecture][owserver-i386-shield]
 
-onewire server to read 1-Wire devices
+onewire server to read 1-Wire devices+
 
 [:books: owserver (1-wire) add-on documentation][addon-doc-owserver]
 
 
-[addon-owserver]: https://github.com/lrybak/hassio-owserver/tree/v0.3.1
-[addon-doc-owserver]: https://github.com/lrybak/hassio-owserver/blob/v0.3.1/README.md
+[addon-owserver]: https://github.com/lrybak/hassio-owserver/tree/v0.6.3
+[addon-doc-owserver]: https://github.com/lrybak/hassio-owserver/blob/v0.6.3/README.md
 [owserver-issue]: https://github.com/lrybak/hassio-owserver/issues
-[owserver-version-shield]: https://img.shields.io/badge/version-v0.3.1-blue.svg
+[owserver-version-shield]: https://img.shields.io/badge/version-v0.6.3-blue.svg
 [owserver-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [owserver-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [owserver-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [owserver-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [owserver-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+
+## Found an issue?
+Please report it in add-on dedicated repository
+- [Open an issue for the add-on: owserver (1-wire)][owserver-issue]
