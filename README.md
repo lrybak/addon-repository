@@ -36,8 +36,8 @@ onewire server to read 1-Wire devices+
 [owserver-version-shield]: https://img.shields.io/badge/version-v0.6.3-blue.svg
 [owserver-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [owserver-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[owserver-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[owserver-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[owserver-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[owserver-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [owserver-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 
 ## Found an issue?
