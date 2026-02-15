@@ -13,7 +13,7 @@ The app provides owserver to read 1-Wire devices over serial/i2c or usb device.
 This app provides you owserver instance to read 1-Wire devices over serial/i2c/usb or ha7net device and exposing reading to Home Assistant via the native integration.
 
 ### Supported devices
-Addon has been tested with
+App has been tested with
 - [MERA-PROJEKT MP00206-P](http://www.meraprojekt.com.pl/mp00206-p.html)
 - [ElabNET's Professional Busmaster PBM-01](https://shop.elabnet.de/en/1-wire/series/h/1-wire-professional-bus-master-pbm01-usb_812_2073)
 - [HA7Net](https://www.embeddeddatasystems.com/HA7Net--Ethernet-1-Wire-Host-Adapter_p_22.html)
@@ -27,7 +27,7 @@ but shoud work well with other serial/i2c/usb/ha7net/passive devices. Please let
 ### Installation
 
 1. Access your Home Assistant, go to **Apps** -> **Install app** and add this URL as an additional repository: 
-`https://github.com/lrybak/addon-repository-edge`
+`https://github.com/lrybak/addon-repository`
 1. Find the "owserver (1-Wire)" app and click the "INSTALL" button.
 1. Configure the app and click on "START". With default configuration app starts with fake (mocked) devices.
 1. Add to Home Assistant through the Integrations. Go to Integrations, Add Integration, Choose 1-Wire
@@ -39,6 +39,17 @@ but shoud work well with other serial/i2c/usb/ha7net/passive devices. Please let
 ### Configuration
 Please check the **[full documentation page](https://github.com/lrybak/hassio-owserver/blob/master/DOCS.md)**.
 
+## Contributors 
+- [lrybak] (https://github.com/lrybak) - primary author and maintainer
+- [bipbip59] (https://github.com/bipbip59)
+- [domectrl] (https://github.com/domectrl)
+- [epenet] (https://github.com/epenet)
+- [SamGamdschie] (https://github.com/SamGamdschie)
+- [s-anderss] (https://github.com/s-anderss)
+- [adeepn] (https://github.com/adeepn)
+- [phpsystems] (https://github.com/phpsystems)
+- [Foxi352] (https://github.com/Foxi352)
+
 ## Screenshots
 
 ![Integration setup 1](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_setup1.png)
@@ -47,7 +58,7 @@ Please check the **[full documentation page](https://github.com/lrybak/hassio-ow
 ![Integrations page](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_integrations.jpg)
 ![owhttpd](https://github.com/lrybak/hassio-owserver/raw/master/images/screenshot_owhttpd.jpg)
 
-[version]: https://img.shields.io/badge/version-v0.6.3-blue.svg
+[version]: https://img.shields.io/badge/version-v0.7.0-blue.svg
 [releases]: https://github.com/lrybak/hassio-owserver/releases
 [addons-repository]: https://github.com/lrybak/addon-repository
 [addons-repository-beta]: https://github.com/lrybak/addon-repository-beta

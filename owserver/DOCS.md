@@ -4,7 +4,7 @@ The app provides owserver enabling access to 1-Wire sensors over serial, i2c, us
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on whenever configuration change._
+**Note**: _Remember to restart the app whenever configuration change._
 
 Example app configurations:
 
