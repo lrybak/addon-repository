@@ -8,7 +8,7 @@ on:
 
 jobs:
   publish:
-    name: Publish add-on update
+    name: Publish app update
     runs-on: ubuntu-latest
     steps:
       - name: 🔂 Wait for other runs to complete
