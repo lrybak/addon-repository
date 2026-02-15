@@ -5,7 +5,7 @@ This apps repository contains stable releases of apps.
 ## Installation
 
 Adding this apps repository to your Home Assistant instance is
-pretty straightforward. In the Home Assistant app store,
+pretty straightforward. In the Home Assistant apps store,
 a possibility to add a repository is provided.
 
 Use the following URL to add this repository:
@@ -24,7 +24,7 @@ https://github.com/lrybak/addon-repository
 
 onewire server to read 1-Wire devices+
 
-[:books: owserver (1-wire) apps documentation][addon-doc-owserver]
+[:books: owserver (1-wire) app documentation][addon-doc-owserver]
 
 
 [addon-owserver]: https://github.com/lrybak/hassio-owserver/tree/v0.7.0
