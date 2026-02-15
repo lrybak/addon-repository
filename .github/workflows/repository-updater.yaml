@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🔂 Wait for other runs to complete
-        uses: softprops/turnstyle@v1
+        uses: softprops/turnstyle@v3
         with:
           continue-after-seconds: 1200
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 🚀 Run Repository Updater
-        uses: hassio-addons/repository-updater@v1.2.5
+        uses: hassio-addons/repository-updater@v2.0.1
         with:
           addon: ${{ github.event.client_payload.addon }}
           repository: ${{ github.repository }}
