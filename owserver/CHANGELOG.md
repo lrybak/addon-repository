@@ -1,13 +1,6 @@
-## 🚀 New Features
-
-- Expose owfs port to network (#67) @lrybak
-
-## 🐛 Bug Fixes
-
-- owhttpd was incorrectly starting even when disabled in settings (#74) @lrybak
 
 ## 📦 Dependency Updates
+- Bump addon base image (#78) @lrybak
+- build: bump alpine from 3.23 to 3.24 (#77) @[dependabot[bot]](https://github.com/apps/dependabot)
 
-- Bump addon base image to 20.0.2 (#70) @lrybak
-
-**Full Changelog**: v0.8.0...v0.9.0
+**Full Changelog**: v0.9.0...v0.9.1
