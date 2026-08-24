@@ -1,5 +1,5 @@
 name: owserver (1-wire)
-version: 0.9.1
+version: 0.9.2
 slug: owserver
 description: onewire server to read 1-Wire devices+
 url: https://github.com/lrybak/hassio-owserver
@@ -16,6 +16,7 @@ ports:
 ports_description:
   4304/tcp: owserver 1-Wire (set port number to expose to LAN)
 uart: true
+usb: true
 options:
   devices:
   - device_type: device_type
